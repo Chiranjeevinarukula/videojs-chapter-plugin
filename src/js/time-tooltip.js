@@ -1,4 +1,3 @@
-// import videojs from 'video.js';
 
 class TimeTooltipMarker extends videojs.getComponent('TimeTooltip') {
   update(content) {
@@ -16,9 +15,9 @@ class TimeTooltipMarker extends videojs.getComponent('TimeTooltip') {
 
         content =
           (secondsBehind < 1 ? '' : '-') +
-          videojs.time.formatTime(secondsBehind, liveWindow);
+          videojs.formatTime(secondsBehind, liveWindow);
       } else {
-        content = videojs.time.formatTime(time, duration);
+        content = videojs.formatTime(time, duration);
       }
 
       if (label) {

@@ -1,6 +1,12 @@
+
+import './js/markers.js'
+import './js/marker.js'
+import './js/mousedisplay.js'
+import './js/time-tooltip.js'
+
 const Plugin = videojs.getPlugin('plugin');
 
-class VideoMarkerPlugin extends Plugin {
+class Chapters extends Plugin {
 
   constructor(player, options) {
     super(player, options);
@@ -97,5 +103,6 @@ class VideoMarkerPlugin extends Plugin {
   }
 }
 
-videojs.registerPlugin('chapter', VideoMarkerPlugin);
+videojs.registerPlugin('chapter', Chapters);
 
+export default Chapters;

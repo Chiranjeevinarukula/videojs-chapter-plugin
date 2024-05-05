@@ -1,0 +1,25 @@
+{
+  "name": "videojs-chapter-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/chapter-plugin.js",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build --dist-dir public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chiranjeevinarukula/videojs-chapter-plugin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chiranjeevinarukula/videojs-chapter-plugin/issues"
+  },
+  "homepage": "https://github.com/Chiranjeevinarukula/videojs-chapter-plugin#readme"
+}

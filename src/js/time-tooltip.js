@@ -1,4 +1,3 @@
-// import videojs from 'video.js';
 
 class TimeTooltipMarker extends videojs.getComponent('TimeTooltip') {
   update(content) {

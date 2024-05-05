@@ -1,4 +1,3 @@
-// import videojs from 'video.js';
 
 class MouseTimeDisplay extends videojs.getComponent('MouseTimeDisplay') {
   constructor(player, options) {

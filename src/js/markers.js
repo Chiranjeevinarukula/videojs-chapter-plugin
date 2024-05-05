@@ -67,8 +67,6 @@ class MarkersDisplay extends videojs.getComponent('component') {
       });
     });
     
-    
-    // this.addMarkers(markersTrack.cues_);
   }
 
   addMarkers(markers = []) {
@@ -121,20 +119,6 @@ class MarkersDisplay extends videojs.getComponent('component') {
       });
   }
 
-  // This function could be called at any time to update the text 
-  // contents of the component.
-  updateTextContent(text) {
-
-    // If no text was provided, default to "Title Unknown"
-    if (typeof text !== 'string') {
-      text = 'Title Unknown';
-    }
-
-    // Use Video.js utility DOM methods to manipulate the content
-    // of the component's element.
-    videojs.emptyEl(this.el());
-    videojs.appendContent(this.el(), text);
-  }
 
   dispose() {
     this.player().off('loadstart', this.resetChildren);

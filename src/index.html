@@ -26,58 +26,5 @@
             { startTime: 1337, label: 'Marker st 1337' }
         ]
       })
-
-    /*player.addClass('chapter-markers');
-    
-    function addMarkers(markers = []) {
-        if (!markers.length) return;
-         
-        console.log('inside addMarkers')
-    
-        const markersTrack = player.addTextTrack(
-          'metadata',
-          'chapter-markers',
-          player.language()
-        );
-    
-        markers.forEach((marker, index, arr) => {
-          const nextMarkerIndex = index + 1;
-          const nextMarker = arr[nextMarkerIndex];
-          const { startTime } = marker;
-          const endTime = nextMarker ? nextMarker.startTime : player.duration();
-          const cue = {
-            startTime,
-            endTime,
-            text: JSON.stringify(marker),
-          };
-    
-          markersTrack.addCue(cue);
-        });
-      })
-
-
-    function loadedMetadata() {
-        console.log('inside loadedMetadata')
-        const markers= [
-          { startTime: 69, label: 'Marker st 69' },
-          { startTime: 420, label: 'Marker st 420' },
-          { startTime: 700.35, label: 'Marker st 700.35' },
-          { startTime: 1069, label: 'Marker st 1069' },
-          { startTime: 1337, label: 'Marker st 1337' },
-          { startTime: 1420.69, label: 'Marker st 1420.69' },
-        ]
-        addMarkers(markers);
-      }
-
-    player.on('loadedmetadata', loadedMetadata);
-
-
-    player
-    .getChild('ControlBar')
-    .getChild('progressControl')
-    .getChild('seekBar')
-    .addChild('MarkersDisplay',{ 
-        componentClass: 'MarkersDisplay',
-    })*/
     </script>
   </body>

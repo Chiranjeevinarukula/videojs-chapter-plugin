@@ -40,7 +40,7 @@ class MarkersDisplay extends videojs.getComponent('component') {
     }
 
     const markers = markersTrack.cues_;
-    const gap = videojs.dom.computedStyle(this.el(), 'gap');
+    const gap = videojs.computedStyle(this.el(), 'gap');
 
     markers.forEach((marker, index, arr) => {
       if (index === 0 && marker.startTime > 0) {

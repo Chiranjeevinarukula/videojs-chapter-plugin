@@ -4,7 +4,7 @@ class MouseTimeDisplay extends videojs.getComponent('MouseTimeDisplay') {
   constructor(player, options) {
     super(
       player,
-      videojs.obj.merge(
+      videojs.mergeOptions(
         {
           children: [
             {
@@ -51,7 +51,7 @@ class MouseTimeDisplay extends videojs.getComponent('MouseTimeDisplay') {
         const seekBarRectWidth = seekBarRect.width;
         const position = seekBarRectWidth * seekBarPoint;
         const timeTooltipWidth = parseFloat(
-          videojs.dom.computedStyle(this.el().firstChild, 'width')
+          videojs.computedStyle(this.el().firstChild, 'width')
         );
         const timeTooltipPosition = position + timeTooltipWidth / 2;
 

@@ -103,7 +103,6 @@ class Chapters extends Plugin {
   }
 }
 
-console.log('testing')
 videojs.registerPlugin('chapter', Chapters);
 
 export default Chapters;

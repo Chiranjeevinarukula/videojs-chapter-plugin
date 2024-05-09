@@ -19,3 +19,8 @@ jobs:
 
     - name: Build
       run: npm run build
+    - name: Deploy to Live Environment
+      uses: actions/upload-artifact@v2
+      with:
+        name: live-js
+        path: dist/*.js 
